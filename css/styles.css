@@ -9,9 +9,33 @@ body {
   color: #212121;
 }
 
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+.contact a {
+  color: #757575;
+}
+
+.contact a:hover {
+  color: #2196f3;
+}
+
 a {
   color: #212121;
   text-decoration: none;
+}
+
+.link-white {
+  color: #fff;
+}
+
+nav > ul > li > a:focus {
+  color: #2196f3;
 }
 
 a:hover {
@@ -26,6 +50,20 @@ button {
   border: none;
   border-radius: 4px;
   font-size: 16px;
+  background: #f5f4fa;
+}
+
+button:hover {
+  background-color: #2196f3;
+}
+
+footer {
+  background: #2f303a;
+}
+
+footer > .contact {
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
 
 .logo {
@@ -36,19 +74,20 @@ button {
   letter-spacing: 0.03em;
 }
 
-a[class~="logo"]:hover {
-  color: #212121;
-}
-
 .prefix {
   color: #2196f3;
 }
 
-.filter > li > button {
-  font-weight: 500;
-  line-height: 26px;
-  background: #f5f4fa;
-  padding: 6px 22px;
+a[class~="logo"]:hover {
+  color: #212121;
+}
+
+.hero-banner {
+  background: #2f303a;
+}
+
+.hero-banner > h1 {
+  color: #ffffff;
 }
 
 .hero-banner > button {
@@ -60,11 +99,36 @@ a[class~="logo"]:hover {
   padding: 10px 32px;
 }
 
-.s1 > ul > li > p {
+.s1 p {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  width: 270px;
 }
 
+.s3 {
+  background: #f5f4fa;
+}
 
+.s3 li {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
+.s3 p {
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.filter > li > button {
+  font-weight: 500;
+  line-height: 26px;
+  padding: 6px 22px;
+}
