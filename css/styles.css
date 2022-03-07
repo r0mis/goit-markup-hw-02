@@ -45,6 +45,9 @@ a:hover {
 address {
   font-style: normal;
 }
+.active {
+  color: #2196f3;
+}
 
 button {
   border: none;
