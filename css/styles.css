@@ -171,8 +171,9 @@ footer .logo {
   color: #757575;
 }
 .s4 p {
+  font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 30px;
   letter-spacing: 0.03em;
 
   color: #757575;
@@ -180,6 +181,8 @@ footer .logo {
 .s4 h2 {
   font-weight: 700;
   font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
 }
 .filter button {
   font-weight: 500;
