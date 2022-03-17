@@ -1,8 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,500;0,700;1,400;1,900&display=swap");
 
+:root {
+  --primary-text-color: #212121;
+  --secondary-bacgraund-color: #f5f4fa;
+  --secondary-text-color: #757575;
+  --primary-active-text-color: #2196f3;
+  --tetrary-text-color: #ffffff;
+  --primary-bacgraund-color: #2f303a;
+  --shadow-text-color: rgba(255, 255, 255, 0.6);
+}
+
 body,
 button {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 }
 
 body {
@@ -10,22 +20,25 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
+header ul {
+  font-weight: 500;
+}
 a {
-  color: #212121;
+  color: var(--primary-text-color);
   text-decoration: none;
 }
 a:focus {
-  color: #2196f3;
+  color: var(--primary-active-text-color);
 }
 
 .contact a:focus {
-  color: #2196f3;
+  color: var(--primary-active-text-color);
 }
 a:hover {
-  color: #2196f3;
+  color: var(--primary-active-text-color);
 }
 
 ul {
@@ -36,11 +49,11 @@ ul li {
   display: inline-block;
 }
 .contact-footer a {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--shadow-text-color);
 }
 
 .adress {
-  color: #fff;
+  color: var(--tetrary-text-color);
 }
 
 address {
@@ -48,66 +61,68 @@ address {
 }
 
 .active {
-  color: #2196f3;
+  color: var(--primary-active-text-color);
 }
 
 button {
   border: none;
   border-radius: 4px;
   font-size: 16px;
-  background: #f5f4fa;
+  cursor: pointer;
+  background: var(--secondary-bacgraund-color);
 }
 
 button:hover {
-  color: #fff;
-  background-color: #2196f3;
+  color: var(--tetrary-text-color);
+  background-color: var(--primary-active-text-color);
 }
 
 button:focus {
-  color: #fff;
-  background-color: #2196f3;
+  color: --tetrary-text-color;
+  background-color: var(--primary-active-text-color);
 }
 footer {
-  background: #2f303a;
+  font-weight: 400;
+  background: var(--primary-bacgraund-color);
 }
 
 .contact a {
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 .contact a:hover {
-  color: #2196f3;
+  color: var(--primary-active-text-color);
 }
 
 footer .contact a {
   line-height: 24px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.02em;
+  color: var(--shadow-text-color);
 }
 
 .logo {
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
 
-  color: #fff;
+  color: var(--tetrary-text-color);
 }
 
 .prefix {
-  color: #2196f3;
+  color: var(--primary-active-text-color);
 }
 
 header .logo {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 footer .logo {
-  color: #ffffff;
+  color: var(--tetrary-text-color);
 }
 
 .hero-banner {
-  background: #2f303a;
+  background: var(--primary-bacgraund-color);
 }
 
 .hero-banner > h1 {
@@ -118,14 +133,14 @@ footer .logo {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #fff;
+  color: var(--tetrary-text-color);
 }
 
 .hero-banner > button {
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
-  color: #fff;
-  background: #2196f3;
+  color: var(--tetrary-text-color);
+  background: var(--primary-active-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 32px;
 }
@@ -133,7 +148,7 @@ footer .logo {
 .s1 p {
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
   width: 270px;
 }
 
@@ -151,11 +166,11 @@ footer .logo {
   font-size: 36px;
 }
 .s3 {
-  background: #f5f4fa;
+  background: var(--secondary-bacgraund-color);
 }
 
 .s3 li {
-  background: #ffffff;
+  background: var(--tetrary-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -168,7 +183,7 @@ footer .logo {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 .s4 p {
   font-weight: 400;
@@ -176,7 +191,7 @@ footer .logo {
   line-height: 30px;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 .s4 h2 {
   font-weight: 700;
