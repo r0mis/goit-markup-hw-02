@@ -14,50 +14,50 @@
         <!-- Создаем шапку -->
         <a class="logo" href="./index.html"><span class="prefix">Web</span>Studio</a>
         <nav>
-            <ul>
+            <ul class="header-menu">
                 <li><a class="active" href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a class="primary-link" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="primary-link" href="">Контакты</a></li>
             </ul>
         </nav>
 
-        <ul class="contact">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="header-contact">
+            <li><a class="secondary-link " href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="secondary-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
 
     <main>
 
         <section class="hero-banner">
-            <h1>ЭФФЕКТИВНОЕ РЕШЕНИЕ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button">Заказать услугу</button>
+            <h1 class="primary-title">Эффективные решения для вашего бизнеса</h1>
+            <button type="button" class="primary-btn">Заказать услугу</button>
         </section>
 
-        <section class="s1">
+        <section>
             <ul>
                 <li>
-                    <h2>Внимание к деталям</h2>
-                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    <h2 class="primary-title s1">Внимание к деталям</h2>
+                    <p class="primary-box">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li>
-                    <h2>Пунктуальность</h2>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    <h2 class="primary-title s1">Пунктуальность</h2>
+                    <p class="primary-box">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
                 <li>
-                    <h2>Планирование</h2>
-                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    <h2 class="primary-title s1">Планирование</h2>
+                    <p class="primary-box">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
                 <li>
-                    <h2>Современные технологии</h2>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    <h2 class="primary-title s1">Современные технологии</h2>
+                    <p class="primary-box">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
         </section>
 
-        <section class="s2">
+        <section>
             <!-- Вставляем картинки и описание -->
-            <h2>Чем мы занимаемся</h2>
+            <h2 class="secondary-title">Чем мы занимаемся</h2>
             <ul>
                 <li>
                     <img src="./images/img_pc.jpg" alt="imac" width="370">
@@ -72,26 +72,26 @@
         </section>
 
 
-        <section class="s3">
+        <section>
             <!-- "Вставляем картинки и описание" -->
-            <h2>Наша команда</h2>
+            <h2 class="secondary-title">Наша команда</h2>
             <ul>
-                <li>
+                <li class="secondary-box">
                     <img src="./images/img_igor.jpg" alt="brown shirt" width="270">
                     <h3>Игорь Демьяненко</h3>
                     <p>Product Designer</p>
                 </li>
-                <li>
+                <li class="secondary-box">
                     <img src="./images/img_olga.jpg" alt="black jacket" width="270">
                     <h3>Ольга Репина</h3>
                     <p>Frontend Developer</p>
                 </li>
-                <li>
+                <li class="secondary-box">
                     <img src="./images/img_nikolay.jpg" alt="blue shirt" width="270">
                     <h3>Николай Тарасов</h3>
                     <p>Marketing</p>
                 </li>
-                <li>
+                <li class="secondary-box">
                     <img src="./images/img_mikhail.jpg" alt="black T-shirt" width="270">
                     <h3>Михаил Ермаков</h3>
                     <p>UI Designer</p>
@@ -100,16 +100,14 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer-contact">
         <a class="logo" href="./index.html"><span class="prefix">Web</span>Studio</a>
         <address>
-            <a class="adress" href="https://goo.gl/maps/WQfAx6PYUr162AUSA" target="_blank" rel="noopener noreferrer">г.
+            <a class="tetrary-link" href="https://goo.gl/maps/WQfAx6PYUr162AUSA" target="_blank" rel="noopener noreferrer">г.
                 Киев, пр-т Леси
                 Украинки, 26</a><br>
-            <span class="contact">
-                <a href="mailto:info@example">info@example.com</a><br>
-                <a href="tel:+380991111111">+38 099 111 11 11</a>
-            </span>
+            <a class="secondary-link lighter" href="mailto:info@example">info@example.com</a><br>
+            <a class="secondary-link lighter" href="tel:+380991111111">+38 099 111 11 11</a>
         </address>
     </footer>
 
