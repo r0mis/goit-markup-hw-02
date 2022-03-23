@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+
 <head>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/block.css" />
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,28 +13,36 @@
 </head>
 
 <body class="backgraund">
-    <header>
+    <div class="container">
+    <header class="header">
         <!-- Создаем шапку -->
-        <a class="logo" href="./index.html"><span class="prefix">Web</span>Studio</a>
-        <nav>
-            <ul class="header-menu">
-                <li><a class="active" href="./index.html">Студия</a></li>
-                <li><a class="primary-link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="primary-link" href="">Контакты</a></li>
+        <div class="part half-one">
+            <div>
+                <a class="logo" href="./index.html"><span class="prefix">Web</span>Studio</a>
+            </div>
+            <div>
+                <nav>
+                    <ul class="header-menu">
+                        <li><a class="active" href="./index.html">Студия</a></li>
+                        <li><a class="primary-link" href="./portfolio.html">Портфолио</a></li>
+                        <li><a class="primary-link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="part half-two">
+            <ul class="header-contact">
+                <li><a class="secondary-link " href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="secondary-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-
-        <ul class="header-contact">
-            <li><a class="secondary-link " href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="secondary-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
 
     <main>
 
-        <section class="hero-banner">
-            <h1 class="primary-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="primary-btn">Заказать услугу</button>
+        <section class="hero-banner section-box-1">
+            <h1 class="primary-title section-box-1_text">Эффективные решения для вашего бизнеса</h1>
+            <button type="button" class="primary-btn section-box-1_button">Заказать услугу</button>
         </section>
 
         <section>
@@ -110,5 +121,5 @@
             <a class="secondary-link lighter" href="tel:+380991111111">+38 099 111 11 11</a>
         </address>
     </footer>
-
+</div>
 </body>
